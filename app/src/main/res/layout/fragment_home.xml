@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?attr/mainBackground">
 
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#00000000">
+        android:background="?attr/mainBackground">
 
         <ImageView
             android:layout_width="match_parent"
@@ -36,14 +38,16 @@
     <!-- TODO: Update blank fragment layout -->
 
     <RelativeLayout
+        android:background="?attr/mainBackground"
         android:layout_width="match_parent"
         android:layout_height="40dp">
 
         <android.support.design.widget.TabLayout
             android:layout_width="match_parent"
             android:layout_height="46dp"
-            app:tabSelectedTextColor="@color/colorRed"
+            app:tabSelectedTextColor="@color/qqq"
             app:tabIndicatorColor="@null"
+            android:background="@color/sss"
             android:id="@+id/tabLayout_title">
         </android.support.design.widget.TabLayout>
 
@@ -53,7 +57,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:padding="8dp"
-            android:background="#ffffff"
+            android:background="@color/sss"
             android:src="@drawable/add_channel_titlbar_new"/>
 
     </RelativeLayout>
@@ -67,6 +71,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#ffffff"
-        android:id="@+id/viewPager"/>
+        android:id="@+id/viewPager"
+        android:background="@color/colorWhite"/>
 </LinearLayout>

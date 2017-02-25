@@ -53,9 +53,9 @@ public class TitleFragment extends Fragment implements PullToRefreshListView.OnR
         url = "http://c.m.163.com/nc/article/headline/"+type+"/"+currentPager+"-20.html";
         //初始化view
         initView();
-        //初始化数据
         initData();
         HttpUtils.loadDataFromServer(url, NewsContent.class, this);
+        //初始化数据
     }
 
     private void initView() {

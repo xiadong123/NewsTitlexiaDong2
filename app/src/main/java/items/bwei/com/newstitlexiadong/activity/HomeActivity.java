@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
 import items.bwei.com.newstitlexiadong.R;
+import items.bwei.com.newstitlexiadong.application.XutilsApplication;
 import items.bwei.com.newstitlexiadong.fragment.CareFragment;
 import items.bwei.com.newstitlexiadong.fragment.HomeFragment;
 import items.bwei.com.newstitlexiadong.fragment.NoLoginFragment;
@@ -62,9 +63,20 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         rbt_care = (RadioButton) findViewById(R.id.rbt_Care);
         rbt_noLogin = (RadioButton) findViewById(R.id.rbt_NoLogin);
 
-        iv_home.setImageResource(R.drawable.b_newhome_tabbar_press);
-        rbt_home.setTextColor(Color.RED);
-        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new HomeFragment()).commit();
+        if (XutilsApplication.flag){
+            iv_home.setImageResource(R.drawable.b_newhome_tabbar_press);
+            rbt_home.setTextColor(Color.RED);
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new HomeFragment()).commit();
+            XutilsApplication.flag=false;
+        }else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new NoLoginFragment()).commit();
+            iv_home.setImageResource(R.drawable.b_newhome_tabbar);
+            rbt_home.setTextColor(Color.BLACK);
+
+
+        }
+
+
 
         ll_home.setOnClickListener(this);
         ll_video.setOnClickListener(this);

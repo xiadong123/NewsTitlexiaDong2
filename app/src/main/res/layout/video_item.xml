@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mainBackground">
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:layout_width="match_parent"
+        android:id="@+id/playVideoss"
+        android:layout_height="200dp">
+        android:background="?attr/mainBackground"
+    </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/mainBackground">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/topicImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/weixin_allshare_normal"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/topicImg"
+            android:id="@+id/topicName"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="000"
+            android:padding="8dp"/>
+
+
+        <ImageView
+            android:id="@+id/more_video"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/morebutton_dynamic_normal"/>
+
+        <ImageView
+            android:layout_toLeftOf="@+id/ping"
+            android:id="@+id/shuliang"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/comment_icon"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:layout_toLeftOf="@+id/more_video"
+            android:id="@+id/ping"
+            android:text="111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

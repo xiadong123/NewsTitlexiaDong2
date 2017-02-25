@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?attr/mainBackground">
 
     <!-- TODO: Update blank fragment layout -->
 
     <RelativeLayout
+        android:background="?attr/mainBackground"
         android:id="@+id/rl"
         android:layout_width="match_parent"
         android:layout_height="46dp">
 
         <TextView
+            android:background="?attr/mainBackground"
             android:textSize="18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -18,6 +21,7 @@
             android:text="我关注的"/>
 
         <ImageView
+            android:background="?attr/mainBackground"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"

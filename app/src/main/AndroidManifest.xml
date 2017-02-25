@@ -25,6 +25,8 @@
         <activity android:name=".activity.NoNetActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".activity.WebViewActivity"/>
+        <activity android:name=".activity.SystemSetingActivity"/>
+
     </application>
 
 </manifest>
