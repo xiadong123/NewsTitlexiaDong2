@@ -33,4 +33,5 @@ dependencies {
     compile 'com.android.support:design:25.1.1'
     testCompile 'junit:junit:4.12'
     compile 'fm.jiecao:jiecaovideoplayer:5.5'
+    compile 'com.github.liuguangqiang.SuperRecyclerView:super-recyclerview:0.1.2'
 }

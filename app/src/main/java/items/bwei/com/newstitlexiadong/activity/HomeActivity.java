@@ -86,6 +86,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()){
             case R.id.ll_Home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,new HomeFragment()).commit();
@@ -146,7 +147,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 iv_noLogin.setImageResource(R.drawable.b_newnologin_tabbar_press);
                 rbt_noLogin.setTextColor(Color.RED);
                 break;
-
         }
     }
 

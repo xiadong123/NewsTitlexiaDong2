@@ -1,5 +1,6 @@
 package items.bwei.com.newstitlexiadong.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -8,12 +9,14 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import items.bwei.com.newstitlexiadong.R;
 import items.bwei.com.newstitlexiadong.adapter.MyFragmentPagerAdapter;
+import items.bwei.com.newstitlexiadong.activity.ChannelActivity;
 
 /**
  * 作者：夏冬
@@ -27,6 +30,7 @@ public class HomeFragment extends Fragment{
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private View view;
+    private ImageView add;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -56,6 +60,15 @@ public class HomeFragment extends Fragment{
     private void initView() {
         tabLayout = (TabLayout) view.findViewById(R.id.tabLayout_title);
         viewPager = (ViewPager) view.findViewById(R.id.viewPager);
+        add = (ImageView) view.findViewById(R.id.add_item);
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ChannelActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //初始化数据
